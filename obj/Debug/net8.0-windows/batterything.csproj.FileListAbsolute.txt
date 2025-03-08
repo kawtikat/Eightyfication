@@ -1,0 +1,17 @@
+C:\Users\kchro\batterything\bin\Debug\net8.0-windows\batterything.exe
+C:\Users\kchro\batterything\bin\Debug\net8.0-windows\batterything.deps.json
+C:\Users\kchro\batterything\bin\Debug\net8.0-windows\batterything.runtimeconfig.json
+C:\Users\kchro\batterything\bin\Debug\net8.0-windows\batterything.dll
+C:\Users\kchro\batterything\bin\Debug\net8.0-windows\batterything.pdb
+C:\Users\kchro\batterything\bin\Debug\net8.0-windows\Plugin.Battery.dll
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\batterything.csproj.AssemblyReference.cache
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\batterything.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\batterything.AssemblyInfoInputs.cache
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\batterything.AssemblyInfo.cs
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\batterything.csproj.CoreCompileInputs.cache
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\batteryt.397832DA.Up2Date
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\batterything.dll
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\refint\batterything.dll
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\batterything.pdb
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\batterything.genruntimeconfig.cache
+C:\Users\kchro\batterything\obj\Debug\net8.0-windows\ref\batterything.dll

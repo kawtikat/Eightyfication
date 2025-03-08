@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kchro\\OneDrive\\Desktop\\Eightyfication-main\\batterything.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kchro\\OneDrive\\Desktop\\Eightyfication-main\\batterything.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kchro\\OneDrive\\Desktop\\Eightyfication-main\\batterything.csproj",
+        "projectName": "batterything",
+        "projectPath": "C:\\Users\\kchro\\OneDrive\\Desktop\\Eightyfication-main\\batterything.csproj",
+        "packagesPath": "C:\\Users\\kchro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kchro\\OneDrive\\Desktop\\Eightyfication-main\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kchro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net4.8-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net4.8-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net4.8-windows",
+          "dependencies": {
+            "Microsoft.Toolkit.Uwp.Notifications": {
+              "target": "Package",
+              "version": "[7.0.0-preview4, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

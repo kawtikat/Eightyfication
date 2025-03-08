@@ -1,0 +1,15 @@
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\bin\Release\net4.8-windows\batterything.exe.config
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\bin\Release\net4.8-windows\batterything.exe
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\bin\Release\net4.8-windows\batterything.pdb
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\bin\Release\net4.8-windows\Microsoft.Toolkit.Uwp.Notifications.dll
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\bin\Release\net4.8-windows\System.ValueTuple.dll
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\obj\Release\net4.8-windows\batterything.csproj.AssemblyReference.cache
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\obj\Release\net4.8-windows\batterything.csproj.SuggestedBindingRedirects.cache
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\obj\Release\net4.8-windows\batterything.exe.config
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\obj\Release\net4.8-windows\batterything.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\obj\Release\net4.8-windows\batterything.AssemblyInfoInputs.cache
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\obj\Release\net4.8-windows\batterything.AssemblyInfo.cs
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\obj\Release\net4.8-windows\batterything.csproj.CoreCompileInputs.cache
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\obj\Release\net4.8-windows\batteryt.397832DA.Up2Date
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\obj\Release\net4.8-windows\batterything.exe
+C:\Users\kchro\OneDrive\Desktop\Eightyfication-main\obj\Release\net4.8-windows\batterything.pdb
