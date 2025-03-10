@@ -83,7 +83,7 @@ namespace BatteryMonitor
             {
                 Location = new Point(20, 150),
                 Size = new Size(150, 20),
-                Text = "Notification at 80%"
+                Text = "Made with <3 by kawtikat"
             };
             this.Controls.Add(notificationStatusLabel);
 
@@ -128,7 +128,7 @@ namespace BatteryMonitor
                 e.Cancel = true; 
                 this.Hide();
                 trayIcon.ShowBalloonTip(2000, "Battery Monitor", 
-                    "Application is still running in the system tray", ToolTipIcon.Info);
+                    "Running in background bb", ToolTipIcon.Info);
             }
             else
             {
@@ -218,7 +218,7 @@ namespace BatteryMonitor
 
         private void SettingsButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Settings functionality will be implemented in a future version.", 
+            MessageBox.Show("Lunch break ke baad ana.", 
                 "Settings", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

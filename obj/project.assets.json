@@ -730,11 +730,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kchro\\OneDrive\\Desktop\\Eightyfication-main\\batterything.csproj",
+      "projectUniqueName": "C:\\Users\\kchro\\batterything\\batterything.csproj",
       "projectName": "batterything",
-      "projectPath": "C:\\Users\\kchro\\OneDrive\\Desktop\\Eightyfication-main\\batterything.csproj",
+      "projectPath": "C:\\Users\\kchro\\batterything\\batterything.csproj",
       "packagesPath": "C:\\Users\\kchro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kchro\\OneDrive\\Desktop\\Eightyfication-main\\obj\\",
+      "outputPath": "C:\\Users\\kchro\\batterything\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kchro\\AppData\\Roaming\\NuGet\\NuGet.Config"

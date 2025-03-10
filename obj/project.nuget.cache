@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NrUS9/+E554=",
+  "dgSpecHash": "LDWtUPw8A7M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kchro\\OneDrive\\Desktop\\Eightyfication-main\\batterything.csproj",
+  "projectFilePath": "C:\\Users\\kchro\\batterything\\batterything.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kchro\\.nuget\\packages\\microsoft.toolkit.uwp.notifications\\7.0.0-preview4\\microsoft.toolkit.uwp.notifications.7.0.0-preview4.nupkg.sha512",
     "C:\\Users\\kchro\\.nuget\\packages\\microsoft.windows.sdk.contracts\\10.0.19041.1\\microsoft.windows.sdk.contracts.10.0.19041.1.nupkg.sha512",
