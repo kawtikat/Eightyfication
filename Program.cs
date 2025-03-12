@@ -9,6 +9,7 @@ namespace BatteryMonitor
     {
         private bool hasNotified = false;
         private double lastBatteryLevel = 0;
+        private int notificationThreshold = 80; // Default threshold value
         private System.Windows.Forms.Timer updateTimer;
         private ProgressBar batteryProgressBar;
         private Label batteryLevelLabel;
@@ -38,7 +39,7 @@ namespace BatteryMonitor
 
             batteryInfoGroup = new GroupBox
             {
-                Text = "Battery Information",
+                Text = "Battery Information | Made with <3 by kawtikat",
                 Location = new Point(20, 20),
                 Size = new Size(250, 120)
             };
@@ -82,8 +83,8 @@ namespace BatteryMonitor
             notificationStatusLabel = new Label
             {
                 Location = new Point(20, 150),
-                Size = new Size(150, 20),
-                Text = "Made with <3 by kawtikat"
+                Size = new Size(100, 20),
+                Text = $"Notify at: {notificationThreshold}%"
             };
             this.Controls.Add(notificationStatusLabel);
 
@@ -168,12 +169,12 @@ namespace BatteryMonitor
                 
                 trayIcon.Text = $"Battery - {batteryLevel}%";
 
-                if (batteryLevel == 80 && lastBatteryLevel < 80 && !hasNotified)
+                if (batteryLevel == notificationThreshold && lastBatteryLevel < notificationThreshold && !hasNotified)
                 {
                     ShowNotification("Battery Alert", $"Battery level has reached {batteryLevel}%");
                     hasNotified = true;
                 }
-                else if (batteryLevel < 50)
+                else if (batteryLevel < notificationThreshold - 30) // Reset notification flag when battery drops significantly
                 {
                     hasNotified = false;
                 }
@@ -218,8 +219,15 @@ namespace BatteryMonitor
 
         private void SettingsButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Lunch break ke baad ana.", 
-                "Settings", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            using (SettingsForm settingsForm = new SettingsForm(notificationThreshold))
+            {
+                if (settingsForm.ShowDialog() == DialogResult.OK)
+                {
+                    notificationThreshold = settingsForm.NotificationThreshold;
+                    notificationStatusLabel.Text = $"Notify at: {notificationThreshold}%";
+                    hasNotified = false; // Reset notification flag when settings change
+                }
+            }
         }
 
         [STAThread]
@@ -228,6 +236,96 @@ namespace BatteryMonitor
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+        }
+    }
+
+    public class SettingsForm : Form
+    {
+        private NumericUpDown thresholdNumericUpDown;
+        private Button saveButton;
+        private Button cancelButton;
+        private GroupBox settingsGroup;
+
+        public int NotificationThreshold { get; private set; }
+
+        public SettingsForm(int currentThreshold)
+        {
+            NotificationThreshold = currentThreshold;
+            InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            this.Text = "Settings";
+            this.Size = new Size(300, 180);
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.StartPosition = FormStartPosition.CenterParent;
+            this.ShowInTaskbar = false;
+
+            settingsGroup = new GroupBox
+            {
+                Text = "Notification Settings",
+                Location = new Point(20, 20),
+                Size = new Size(250, 70)
+            };
+            this.Controls.Add(settingsGroup);
+
+            Label thresholdLabel = new Label
+            {
+                Text = "Notify when battery reaches:",
+                Location = new Point(15, 25),
+                Size = new Size(150, 20)
+            };
+            settingsGroup.Controls.Add(thresholdLabel);
+
+            thresholdNumericUpDown = new NumericUpDown
+            {
+                Location = new Point(170, 25),
+                Size = new Size(60, 20),
+                Minimum = 1,
+                Maximum = 100,
+                Value = NotificationThreshold
+            };
+            settingsGroup.Controls.Add(thresholdNumericUpDown);
+
+            Label percentLabel = new Label
+            {
+                Text = "%",
+                Location = new Point(235, 25),
+                Size = new Size(20, 20)
+            };
+            settingsGroup.Controls.Add(percentLabel);
+
+            saveButton = new Button
+            {
+                Text = "Save",
+                Location = new Point(110, 105),
+                Size = new Size(75, 23),
+                DialogResult = DialogResult.OK
+            };
+            saveButton.Click += SaveButton_Click;
+            this.Controls.Add(saveButton);
+
+            cancelButton = new Button
+            {
+                Text = "Cancel",
+                Location = new Point(195, 105),
+                Size = new Size(75, 23),
+                DialogResult = DialogResult.Cancel
+            };
+            this.Controls.Add(cancelButton);
+
+            this.AcceptButton = saveButton;
+            this.CancelButton = cancelButton;
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            NotificationThreshold = (int)thresholdNumericUpDown.Value;
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }

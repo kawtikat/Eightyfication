@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("batterything")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df0f393edbd0e89e07745f0f41e47dbe6572090a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f03faee1d0fdea55e2c29c35d4ade0aef9f27b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("batterything")]
 [assembly: System.Reflection.AssemblyTitleAttribute("batterything")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
