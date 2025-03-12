@@ -4,7 +4,7 @@ just open the exe(at bin/Release/net4.8-windows/batterything.exe)
 
 Todo:
 
-~~1. Interface - Winexe~~
+1. ~~Interface - Winexe~~
 
 2. Scheduled actions - Integration with Windows Task Scheduler
 
